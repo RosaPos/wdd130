@@ -1,20 +1,49 @@
+body {
+  margin: 0; /* I had to research how to remove the default margin because it wasn’t centering correctly */  
+}
+
 .callout {
-	max-width: 90%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
-    border:1px solidrgb(000 /10%);
+	max-width: 45rem;
+    margin: 7% auto; /* I had to ask the AI how to center the box because using percentages made it shift slightly to the left, not fully centered */  
+    border:1px solid rgb(0 0 0 / 10%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    background-color: rgb(34, 68, 119);
+    color: white;
+    font: 400 16px / 1.5 Montserrat, Helvetica, sans-serif; /* I copied this from the page https://byui-cse.github.io/wdd130-ww-course/week02/prepare-css-box-model.html when I inspected it */  
 }
 
 .callout img {
-	
+	float: right;
+    width: 8rem;
+    height: auto;
+    margin: 0 0 10px 10px;
+
+    border: 1px solid black;
+    padding: 4px; 
+    background-color: rgb(200, 200, 200);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 blockquote {
-	
+    margin: 10px 0 10px 0;
 }
 
 cite {
-	
+    display: block;
+	border-top: 2px dotted white;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    padding-top: 1%;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    text-align: right;
+    font-size: small;
+}
+
+blockquote,
+cite {
+    font-weight: bold; /* I asked the AI how to make all the text bold, and it recommended adding this at the end */
 }
