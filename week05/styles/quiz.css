@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+max-width: 500px;
+margin: 1rem;
+border: 1px solid rgb(0, 0, 0);
+padding: 1rem;
+background-color: #555;
+color: #fff;
+}
+
+h1 {
+  margin: 5rem;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1rem;
+  background-color: #f0f2f5;
+  color: #222;
+  line-height: 1.5;
+}
+
+form {
+
+  background-color: #fff;
+  color: #111;
+}
+
+code {
+  display: block;
+  background-color: #000;
+  color: #fff;
+}
+
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+.quiz-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #0d1f65;
+  margin: 1rem auto;
+  max-width: 700px;
+}
+
+.quiz-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.875rem;
+  border-radius: 3px;
+}
+
+/* The quiz container holds the form and provides a subtle card
+   effect with padding, border and rounded corners. */
+.quiz-container {
+  background-color: #e6e8ed;
+  border: 1px solid #d8dbe4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Each form item stacks its label and input elements vertically and
+   provides space below for separation. */
+.form-item {
+  border: none;
+  margin-bottom: .5rem;
+}
+
+/* Style the question labels to stand out. The number is coloured
+   separately using the .question-number span. */
+.form-item label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.question-number {
+  margin-right: 0.25rem;
+  color: #3b2d88;
+  font-weight: bold;
+}
+
+/* Inputs, textareas and selects share similar visual treatment: a
+   light border, subtle corner radius and internal padding. They
+   occupy the full available width. */
+input[type='text'],
+input[type='number'],
+select,
+textarea {
+  min-width: 350px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #b5b9c9;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+}
+
+/* Ensure textarea does not resize horizontally and matches other inputs */
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Code block preceding the numeric input: dark background,
+   monospace text and gentle rounding */
+.code-block {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  white-space: pre;
+}
+
+/* Quiz submission button styling: full width, vivid colour and
+   rounded corners. Hover and focus states provide feedback. */
+.submit-button,
+button[type='submit'] {
+  display: block;
+  width: 100%;
+  background-color: #0d1f65;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.85rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+button[type='submit']:hover,
+button[type='submit']:focus {
+  background-color: #04144a;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  border-radius: .5rem;
+  border: 1px solid rgb(0, 0, 0);
+}
