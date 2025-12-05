@@ -66,8 +66,6 @@ code {
   border-radius: 3px;
 }
 
-/* The quiz container holds the form and provides a subtle card
-   effect with padding, border and rounded corners. */
 .quiz-container {
   background-color: #e6e8ed;
   border: 1px solid #d8dbe4;
@@ -77,15 +75,11 @@ code {
   margin: 0 auto;
 }
 
-/* Each form item stacks its label and input elements vertically and
-   provides space below for separation. */
 .form-item {
   border: none;
   margin-bottom: .5rem;
 }
 
-/* Style the question labels to stand out. The number is coloured
-   separately using the .question-number span. */
 .form-item label {
   display: block;
   margin-bottom: 0.5rem;
@@ -100,9 +94,6 @@ code {
   font-weight: bold;
 }
 
-/* Inputs, textareas and selects share similar visual treatment: a
-   light border, subtle corner radius and internal padding. They
-   occupy the full available width. */
 input[type='text'],
 input[type='number'],
 select,
@@ -116,14 +107,11 @@ textarea {
   background-color: #fff;
 }
 
-/* Ensure textarea does not resize horizontally and matches other inputs */
 textarea {
   resize: vertical;
   min-height: 120px;
 }
 
-/* Code block preceding the numeric input: dark background,
-   monospace text and gentle rounding */
 .code-block {
   background-color: #333;
   color: #fff;
@@ -135,8 +123,6 @@ textarea {
   white-space: pre;
 }
 
-/* Quiz submission button styling: full width, vivid colour and
-   rounded corners. Hover and focus states provide feedback. */
 .submit-button,
 button[type='submit'] {
   display: block;
