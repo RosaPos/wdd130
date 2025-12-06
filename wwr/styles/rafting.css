@@ -1,4 +1,6 @@
-/*  CSS Variables  28 11 2025 */
+/* =========================================
+   1. VARIABLES Y RESETEO GLOBAL
+   ========================================= */
 
 :root {
   --primary-color: #0b3c5d;
@@ -21,10 +23,17 @@ body {
   background-color: #ffffff;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
+
+
+/* =========================================
+   2. HEADER Y NAVEGACIÓN
+   ========================================= */
 
 header {
   background-color: var(--primary-color);
@@ -42,8 +51,6 @@ header img {
   align-items: normal;
 }
 
-
-/* Navigation styles */
 nav {
   padding: 0;
 }
@@ -62,7 +69,6 @@ nav li {
   margin: 0;
 }
 
-
 header nav ul {
   list-style: none;
   display: flex;
@@ -80,100 +86,77 @@ nav a {
   padding: 0.5rem 1rem;
   text-decoration: none;
   font-weight: 600;
-  color: var(--accent2-color); 
+  color: var(--accent2-color);
 }
-
 
 header nav a:hover {
   text-decoration: underline;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
 
 
-/* Hero section */
+/* =========================================
+   3. SECCIÓN HERO (ABOUT)
+   ========================================= */
 
 .hero {
-  position: relative; 
+  position: relative;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: var(--accent1-color);
-    color: #ffffff;
-    opacity: 0.8;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .hero article {
-    position: absolute;
-    bottom: 0%;
-    left: 48%;
-    transform: translateX(-50%);
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+  position: absolute;
+  bottom: 0%;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
 }
 
 .hero article img {
-    float: right;
-    width: 150px;
-    height: auto;
-    margin-left: 1rem;
-}
-
-
-/*  Footer & Social Media  */
-
-footer {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 1rem 0;
-  border-top: 1px solid #000;
-  margin-top: 1rem;
-}
-
-footer img {
-  width: 32px;
+  float: right;
+  width: 150px;
   height: auto;
-  margin: 0 4px;
+  margin-left: 1rem;
 }
 
-.socialmedia {
-  display: flex;
-  gap: 0.5rem;
-}
 
-.socialmedia a{
-  text-decoration: none; 
-}
-
-.socialmedia img {
-  width: 32px;
-  height: auto;
-  display: block;
-}
+/* =========================================
+   4. SECCIÓN HISTORY
+   ========================================= */
 
 .history {
   padding: 1rem;
@@ -198,25 +181,30 @@ footer img {
 }
 
 .history-content img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
+
+/* =========================================
+   5. SECCIÓN ADVENTURES
+   ========================================= */
 
 .adventures {
   padding: 1rem;
 }
 
 .adventure-gallery {
-  display: flex;              
+  display: flex;
   gap: 1rem;
   justify-content: space-between;
 }
 
 .adventure-gallery figure {
-  flex: 1 1 150px;            
+  flex: 1 1 150px;
   text-align: center;
 }
 
@@ -231,7 +219,10 @@ footer img {
   font-size: 0.9rem;
 }
 
-/* CONTACT PAGE  ---------------------------------- */
+
+/* =========================================
+   6. CONTACT PAGE: ENCABEZADO Y GRID
+   ========================================= */
 
 .contact-header {
   max-width: 840px;
@@ -265,22 +256,27 @@ footer img {
   border-radius: 0.5rem;
 }
 
+
+/* =========================================
+   7. CONTACT FORM: CONTENEDOR Y BASE
+   ========================================= */
+
 .contact-form {
-    background: #f7f7f7;
-    padding: 1rem;
-    border-radius: 12px;
-    max-width: 600px;
-    margin: 0 auto;
-    display: grid;
-    gap: 0;
-    font-size: 1rem;
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 0;
+  font-size: 1rem;
 }
 
 .contact-form form {
   background-color: #f5f5f5;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   display: grid;
   gap: 0.75rem;
 }
@@ -290,26 +286,107 @@ footer img {
   font-weight: 600;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  padding: 0.7rem;
   border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  font-family: var(--body-font);
+  border-radius: 6px;
   font-size: 1rem;
+  font-family: var(--body-font);
 }
 
 .contact-form textarea {
   resize: vertical;
 }
 
-.radio-group label,
-.checkbox-group label {
-  font-weight: 400;
-  display: block;
-  margin-bottom: 0.25rem;
+
+/* =========================================
+   8. CONTACT FORM: LAYOUT DE FILAS
+   ========================================= */
+
+.form-row.two-col {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  gap: 0;
+  align-items: center;
+}
+
+.form-row.full-row {
+  grid-column: 1 / -1;
+}
+
+.full-width {
+  grid-template-columns: 1fr;
+}
+
+.full-width textarea {
+  width: 100%;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+
+/* =========================================
+   9. RADIO BUTTONS: MESSAGE PURPOSE
+   ========================================= */
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.radio-group input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* =========================================
+   10. CHECKBOX NEWSLETTER
+   ========================================= */
+
+.checkbox,
+.form-item.checkbox,
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-item.checkbox label,
+.newsletter label {
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   11. BOTÓN DE ENVÍO DEL FORMULARIO
+   ========================================= */
+
+.btn-submit {
+  background: #043b66;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #022e4c;
 }
 
 .contact-form button[type="submit"] {
@@ -327,7 +404,10 @@ footer img {
   background-color: var(--accent1-color);
 }
 
-/* Team section */
+
+/* =========================================
+   12. TEAM SECTION
+   ========================================= */
 
 .team {
   max-width: 100%;
@@ -354,7 +434,7 @@ footer img {
   background-color: white;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   max-width: 180px;
 }
 
@@ -370,89 +450,37 @@ footer img {
   font-weight: 600;
 }
 
-.form-row.two-col {
-    display: grid;
-    grid-template-columns: 1fr 3.5fr;
-    gap: 0;
-    align-items: center;
-}
 
-.form-row.full-row {
-    grid-column: 1 / -1;
-}
+/* =========================================
+   13. FOOTER Y REDES SOCIALES
+   ========================================= */
 
-.full-width {
-    grid-template-columns: fr;
-}
-
-.full-width textarea {
-    width: 100%;
-}
-
-.contact-form label {
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
-    width: 100%;
-    padding: .7rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-.radio-group label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; 
-    margin-bottom: 0.5rem;
-}
-
-.radio-group input[type="radio"] {
-    width: 18px;
-    height: 18px;
-}
-
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.form-item.checkbox {
+footer {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid #000;
+  margin-top: 1rem;
+}
+
+footer img {
+  width: 32px;
+  height: auto;
+  margin: 0 4px;
+}
+
+.socialmedia {
+  display: flex;
   gap: 0.5rem;
 }
 
-.form-item.checkbox label {
-  white-space: nowrap; 
+.socialmedia a {
+  text-decoration: none;
 }
 
-
-.btn-submit {
-    background: #043b66;
-    color: white;
-    border: none;
-    padding: .9rem;
-    width: 100%;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.btn-submit:hover {
-    background: #022e4c;
-}
-
-.newsletter {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; 
-}
-
-.newsletter label {
-  white-space: nowrap;
+.socialmedia img {
+  width: 32px;
+  height: auto;
+  display: block;
 }
