@@ -57,37 +57,29 @@
 
                     <div class="form-row two-col">
                         <span class="label-left">Message <br> Purpose</span>
-
                         <div class="radio-group">
-                            <label>
-                                <input type="radio" name="purpose" value="general">
-                                General Inquiry
-                            </label>
+                            <input type="radio" id="purpose-general" name="purpose" value="general">
+                            <label for="purpose-general">General Inquiry</label>
 
-                            <label>
-                                <input type="radio" name="purpose" value="reservation">
-                                Reservation Question
-                            </label>
+                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                            <label for="purpose-reservation">Reservation Question</label>
 
-                            <label>
-                                <input type="radio" name="purpose" value="suggestion">
-                                Website Suggestion
-                            </label>
+                            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                            <label for="purpose-suggestion">Website Suggestion</label>
                         </div>
                     </div>
+
 
                     <div class="form-item column1 full-width">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Type here..." rows="4"></textarea>
                     </div>
 
-
-                    <div class="form-item checkbox">
-                        <label class="checkbox">
-                            <input type="checkbox" id="subscribe" name="subscribe">
-                            Please subscribe me to the monthly newsletter
-                        </label>
+                    <div class="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
                     </div>
+
 
                     <div class="form-row full-row">
                         <button type="submit" class="btn-submit">Get in Touch!</button>

@@ -446,3 +446,13 @@ footer img {
 .btn-submit:hover {
     background: #022e4c;
 }
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.newsletter label {
+  white-space: nowrap;
+}
