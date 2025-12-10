@@ -682,6 +682,15 @@ footer img {
   gap: 1.5rem;
 }
 
+.trips-grid > h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+
 .trip-card {
   background-color: #f7f7f7;
   border-radius: 0.75rem;
