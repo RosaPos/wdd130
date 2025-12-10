@@ -4,7 +4,8 @@
 
 :root {
   --primary-color: #0b3c5d;
-  --accent1-color: #1d2731;
+  --secondary-color: #fff;
+  --accent1-color: #1d2731d2;
   --accent2-color: #f4d35e;
   --heading-font: "Times New Roman","Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
@@ -102,8 +103,8 @@ nav,
 p,
 section,
 article {
-  margin: 16px;
-  padding: 8px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -482,4 +483,258 @@ footer img {
   width: 32px;
   height: auto;
   display: block;
+}
+
+/* =========================================
+   14. HOME PAGE (INDEX)
+   ========================================= */
+
+.home-hero {
+  position: relative;
+  margin-top: 0;
+}
+
+.home-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-hero-content {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: var(--accent1-color);
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.9;
+  border-radius: 0;
+}
+
+.home-hero-content h1 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.home-hero-content p {
+  margin: 0;
+}
+.btn-cta,
+.btn-cta-outline {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btn-cta {
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+}
+
+.btn-cta:hover {
+  background-color: #f0c935;
+}
+
+.btn-cta-outline {
+  border: 2px solid var(--accent2-color);
+  color: var(--accent1-color);
+}
+
+.btn-cta-outline:hover {
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+}
+
+
+.newsletter-section {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 1.5rem 2rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-section p {
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.newsletter-row {
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.newsletter-row label {
+  font-weight: 600;
+}
+
+.newsletter-row input[type="text"],
+.newsletter-row input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+}
+
+.newsletter-explore {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.home-grid {
+  margin: 2rem 1rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.home-card {
+  background-color: #f7f7f7;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.home-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-card-text {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.home-card-text h2 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+
+.home-card-full {
+  grid-column: 1 / -1;
+}
+
+/* =========================================
+   15. TRIPS PAGE
+   ========================================= */
+
+.trips-cta {
+  margin: 1.5rem 1rem 2rem;
+  padding: 1.5rem;
+  background-color: #f2f2f2;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.trips-cta h1 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.trips-grid {
+  margin: 0 1rem 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.trip-card {
+  background-color: #f7f7f7;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.trip-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trip-card-text {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.trip-card-text h2 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+
+/* Trips table */
+
+.trips-table-section {
+  margin: 0 1rem 3rem;
+}
+
+.trips-table-section h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.trips-table-section p {
+  margin-bottom: 0.75rem;
+}
+
+.trips-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.trips-table thead {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.trips-table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
 }
